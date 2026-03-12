@@ -71,8 +71,11 @@ table tr td{
     background-color: #000000;
     color: #ffffff;
 }
+input{
+    transition: all 0.3s ease;
+}
 input:hover{
-    border-bottom: 2px solid #63ff3f;
+    border-bottom: 1px solid #63ff3f;
 }
 input:focus{
     outline: none;
