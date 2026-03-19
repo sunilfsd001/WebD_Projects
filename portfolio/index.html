@@ -1,24 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1 class="head-text">Portfolio</h1>
-<div class="main">
-    <div class="text-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ducimus, et alias voluptatibus quidem repellat soluta reprehenderit minus numquam enim vel voluptas perferendis ex? Exercitationem facere ad numquam eligendi. Nobis porro consequuntur ad beatae voluptate, qui rem deserunt nemo mollitia.
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Navigation -->
 
-        </p>
-    </div>
-    <div class="image">
-        <img src="/Map/India-map-en.png" alt="">
-    </div>
-</div>
-<div style="color: aliceblue;"><h1>scroll down</h1></div>
-<div class="sec-content"></div>
-</body>
+		<nav class="nav">
+			<h1 class="portfolio">Portfolio</h1>
+			<ul class="tags">
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul class="social-icons">
+				<li>
+					<a class="icon hov" href="https://github.com/sunilfsd001"
+						><i class="fa-brands fa-github"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="icon hov"
+						href="https://www.linkedin.com/in/sunil-kumar-048237255/"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+				</li>
+				<li>
+					<a class="icon hov" href="mailto:sunilkumars198000@gmail.com"
+						><i class="fa-solid fa-envelope"></i
+					></a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Main Content -->
+
+		<div class="sec1">
+			<div class="textsec">
+				<h1 class="heading">Hi, I'm Sunil Kumar</h1>
+				<p class="subheading">
+					A passionate <strong>Full stack developer</strong> with a knack for
+					creating stunning and functional websites. I love building responsive,
+					user-friendly web applications and solving complex problems with clean
+					code.
+				</p>
+			</div>
+			<div class="image">
+				<img src="image.png" alt="Sunil Kumar" />
+			</div>
+		</div>
+
+		<!-- Scroll Indicator -->
+
+		<div class="sec2">
+			<div class="scroll">
+				<p>Scroll down to see more</p>
+				<i class="fa-solid fa-chevron-down"></i>
+			</div>
+		</div>
+
+		<!-- Education  -->
+
+		<div id="education">
+			<div class="section-title">
+				<h2>Education & Certifications</h2>
+				<div class="title-line"></div>
+			</div>
+			<div class="edu-boxes-container">
+				<div class="edu-box">
+					<div class="edu-icon">🎓</div>
+					<h2 class="edu-heading">Certifications</h2>
+					<p class="edu-subheading">
+						Full Stack Development (2025) <br /><span class="textdull">
+							Besant Technologies , Velacherry</span
+						>
+					</p>
+					<p class="edu-content">
+						Completed comprehensive training in full stack development, gaining
+						expertise in both frontend and backend technologies.
+					</p>
+				</div>
+				<div class="edu-box">
+					<div class="edu-icon">🎯</div>
+					<h2 class="edu-heading">Graduation</h2>
+					<p class="edu-subheading">
+						Bachelor of Computer Application (2022-2025) <br /><span
+							class="textdull"
+						>
+							D L R college of arts and science, Arcot</span
+						>
+					</p>
+					<p class="edu-content">
+						During my graduation, I developed a strong foundation in computer
+						science principles and programming languages. And participated in
+						competitions.
+					</p>
+				</div>
+				<div class="edu-box">
+					<div class="edu-icon">📚</div>
+					<h2 class="edu-heading">School</h2>
+					<p class="edu-subheading">
+						Higher Secondary Education (2020-2022) <br /><span class="textdull">
+							GBHS School, Thiruvalam</span
+						>
+					</p>
+					<p class="edu-content">
+						Completed coursework in Python programming, gaining a solid
+						understanding of fundamental concepts and applications.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Projects Section -->
+		<div id="projects">
+			<div class="section-title">
+				<h2>Featured Projects</h2>
+				<div class="title-line"></div>
+			</div>
+			<div class="projects-grid">
+				<div class="project-card">
+					<div
+						class="project-image"
+						style="
+							background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+						"
+					><img src="bank.png" alt="">
+                </div>
+					<div class="project-content">
+						<h3>Simple Bank Application</h3>
+						<p>
+							Made a simple bank application using python anf flask frame work.
+						</p>
+                        <a class="link" href="https://github.com/sunilfsd001/SimpleBankApplication">See here &#8605</a>
+						<div class="tech-tags">
+							<span class="tag">Python</span>
+							<span class="tag">MYSQL</span>
+							<span class="tag">HTML/CSS</span>
+							<span class="tag">JS</span>
+						</div>
+					</div>
+				</div>
+				<div class="project-card">
+					<div
+						class="project-image"
+						style="
+							background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+						"
+					><img src="staticpage.png" alt=""></div>
+					<div class="project-content">
+						<h3>Static web page</h3>
+						<p>Designed a web page for an ancient temple in my district.</p>
+                        <a href="https://sunilfsd001.github.io/thiruvalam/" class="link">See here &#8605</a>
+						<div class="tech-tags">
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+						</div>
+					</div>
+				</div>
+				<div class="project-card">
+					<div
+						class="project-image"
+						style="
+							background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+						"
+					><img src="wedo.png" alt=""></div>
+					<div class="project-content">
+						<h3>Business Service Template</h3>
+						<p>Built a simple design with form to fill the details to the business development.</p>
+                        <a href="https://sunilfsd001.github.io/wedo_page/" class="link">See here &#8605</a>
+						<div class="tech-tags">
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Experience Section -->
+		<div id="experience">
+			<div class="section-title">
+				<h2>Professional Experience</h2>
+				<div class="title-line"></div>
+			</div>
+			<div class="experience-timeline">
+				<div class="timeline-item">
+					<div class="timeline-badge">2026</div>
+					<div class="timeline-content">
+						<h3>Full Stack Developer Intern</h3>
+						<p class="company">Full Stack Development & Training</p>
+						<p class="description">
+							Building modern applications with focus on responsive design,
+							user experience, and clean code practices. Actively learning and
+							implementing latest technologies.
+						</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-badge">2023 </div>
+					<div class="timeline-content">
+						<h3>Sales Associate</h3>
+						<p class="company">Avenue Supermarts Ltd</p>
+						<p class="description">
+							Learned about the Retails bussiness model.Gained knowledge in FSSAI, FSO, Audit, Inventery Management.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div id="contact">
+			<div class="section-title">
+				<h2>Get In Touch</h2>
+				<div class="title-line"></div>
+			</div>
+			<div class="contact-content">
+				<p class="contact-text">
+					I'm always open to new opportunities and interesting projects. Feel
+					free to reach out!
+				</p>
+				<div class="contact-links">
+					<a href="mailto:sunilkumars198000@gmail.com" class="contact-btn"
+						>Send Email</a
+					>
+					<a
+						href="https://www.linkedin.com/in/sunil-kumar-048237255/"
+						class="contact-btn"
+						>Connect on LinkedIn</a
+					>
+					<a href="https://github.com/sunilfsd001" class="contact-btn"
+						>Visit GitHub</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>&copy; 2026 Sykros Techs. All rights reserved.</p>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/e7c1abd6c7.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
