@@ -121,7 +121,8 @@ html::selection{
     color: #fff;
 }
 .welcome-sec .mask{
-    background: rgba(0, 0, 0, 0.84); 
+    background: rgba(0, 0, 0, 0.84);
+    padding:20px;
 }
 .main-text{
     height: 250px;
