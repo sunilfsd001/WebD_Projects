@@ -116,14 +116,16 @@ html::selection{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(7, 7, 7);
-    padding: 25px;
+    background:url("https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/vibrant-spices-and-herbs-in-antique-spoons-f_eW2GAHVVWUzr7-tXGtc.webp")center/cover;
     text-align: center;
     color: #fff;
 }
+.welcome-sec .mask{
+    background: rgba(0, 0, 0, 0.84); 
+}
 .main-text{
     height: 250px;
-    margin-top: 80px;
+    margin-top:50px;
     padding: 0 50px;
 }
 .main-p-text{
@@ -141,7 +143,9 @@ html::selection{
     flex-direction: column;
     justify-content: space-evenly;
     padding:15px;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 10px;
     transition: all .2s ease;
 }
 .review-box:hover{
@@ -165,6 +169,7 @@ html::selection{
     gap: 30px;
     background-color: rgb(255, 174, 0);
     padding: 20px;
+    border-radius: 10px;
 }
 .offer ul li{
     color:#000;
@@ -199,6 +204,7 @@ html::selection{
     gap:30px;
     background-color: rgb(255,174,0);
     padding: 20px;
+    border-radius: 10px;
 }
 .dish ul li{
     font-size:18px;
@@ -218,7 +224,7 @@ html::selection{
 
 #contact{
     /* height: 80vh;    */
-    background:url("https://images.unsplash.com/photo-1625604087024-7fb428fc4626?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background:url("https://images.unsplash.com/photo-1625604087024-7fb428fc4626?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
 }
 .mask{
     width: 100%;
@@ -237,14 +243,22 @@ html::selection{
     margin-bottom: 50px;
     color: white;
 }
+.contact-details{
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 50px;
+    border-radius: 10px;
+    line-height: 35px;
+    width: 500px;
+}
+
 footer{
-    height:100px;
     background-color: #000;
+    height:100px;
     color: #fff;
     text-align: center;
     padding: 40px;
 }
 footer p{
     font-size: 12px;
-
+    line-height: 40px;
 }
