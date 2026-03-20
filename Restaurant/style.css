@@ -180,6 +180,41 @@ html::selection{
     text-align: center;
     padding: 10px;
 }
+/* Menu Section */
+
+#menu-sec{
+    background: url("https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/cooked-mussels-qdw118_PN3xAFS89lCXBD.webp")center/cover;
+}
+#menu-sec .mask{
+    padding: 100px 0;
+}
+.menus{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.dish{
+    color: black;
+    gap:30px;
+    background-color: rgb(255,174,0);
+    padding: 50px;
+}
+.dish ul li{
+    font-size:20px;
+    font-weight: 600;
+    line-height: 40px;
+    border-bottom: 1px #000 dotted;
+    color:black;
+}
+.dish p{
+    font-size: 30px;
+    font-weight:800;
+    margin-bottom:20px;
+    text-align: center;
+    padding: 10px;
+}
+
 
 #contact{
     height: 80vh;   
