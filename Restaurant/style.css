@@ -174,7 +174,7 @@ html::selection{
     border-bottom: 2px #000 dashed;
 }
 .offer p{
-    font-size: 30px;
+    font-size: 25px;
     font-weight:800;
     margin-bottom:50px;
     text-align: center;
@@ -198,12 +198,12 @@ html::selection{
     color: black;
     gap:30px;
     background-color: rgb(255,174,0);
-    padding: 50px;
+    padding: 20px;
 }
 .dish ul li{
-    font-size:20px;
+    font-size:18px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 30px;
     border-bottom: 1px #000 dotted;
     color:black;
 }
@@ -217,7 +217,7 @@ html::selection{
 
 
 #contact{
-    height: 80vh;   
+    /* height: 80vh;    */
     background:url("https://images.unsplash.com/photo-1625604087024-7fb428fc4626?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 .mask{
