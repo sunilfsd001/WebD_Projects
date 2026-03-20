@@ -770,6 +770,8 @@ html::selection{
     .sec1 {
         padding: 50px 50px;
         gap: 30px;
+        /* flex-direction: row; */
+        margin-top: 150px;
     }
     .textsec h1 {
         font-size: 40px;
@@ -782,6 +784,9 @@ html::selection{
     }
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project-card{
+        justify-content: space-between;
     }
     .experience-timeline {
         padding: 0 20px;
@@ -800,6 +805,7 @@ html::selection{
     }
     .tags, .social-icons {
         gap: 10px;
+        display: none;
     }
     .tags li a {
         font-size: 14px;
@@ -809,9 +815,11 @@ html::selection{
     }
     .sec1 {
         padding: 30px 20px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
-        margin-top: 250px;
+    }
+    .textsec {
+        text-align: center;
     }
     .textsec h1 {
         font-size: 30px;
@@ -821,7 +829,7 @@ html::selection{
         text-align: center;
     }
     .image {
-        width: 100%;
+        width: 50%;
     }
     .sec2 {
         padding: 20px;
@@ -872,7 +880,9 @@ html::selection{
     }
     .sec1 {
         padding: 20px 15px;
-        margin-top: 220px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        gap: 100px;
     }
     .textsec h1 {
         font-size: 24px;
@@ -882,15 +892,6 @@ html::selection{
     }
     .section-title h2 {
         font-size: 26px;
-    }
-    #education, #projects, #skills, #experience, #contact {
-        padding: 40px 15px;
-    }
-    .edu-box {
-        max-width: 100%;
-    }
-    .project-card {
-        max-width: 100%;
     }
 }
 
