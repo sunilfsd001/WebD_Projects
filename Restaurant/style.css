@@ -21,7 +21,7 @@ html::selection{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255,255,255,.64);
+    background-color: rgba(255,255,255,.44);
     padding:20px;
     backdrop-filter: blur(5px);
     z-index: 1000;
@@ -52,7 +52,7 @@ html::selection{
     justify-content: start;
     align-items: center;
     position: relative;
-    top: 10px;
+    top: 0px;
     left:0px;
     background: url("https://i0.wp.com/spiceindiaonline.com/wp-content/uploads/2021/05/Tandoori-Chicken-20.jpg?w=600&ssl=1")center;
     height: 100px;
@@ -80,7 +80,8 @@ html::selection{
 .list-menu{
     width: 25%;
     background-color: rgb(255, 174, 0);
-    height: calc(100vh - 188px);
+    min-height: calc(100vh - 188px);
+    max-height:110vh;
     padding: 30px 10px;
 }
 .list-text{
@@ -111,7 +112,8 @@ html::selection{
     border-bottom: 2px black solid;
 }
 .welcome-sec{
-    height: calc(100vh - 188px);
+    min-height: calc(100vh - 188px);
+    max-height:1200px;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -125,12 +127,12 @@ html::selection{
     padding:20px;
 }
 .main-text{
-    height: 250px;
     margin-top:50px;
     padding: 0 50px;
 }
 .main-p-text{
     text-align: justify;
+    margin-bottom: 80px;
 }
 .reviews{
     display: flex;
@@ -138,7 +140,7 @@ html::selection{
     justify-content: space-evenly;
 }
 .review-box{
-    height: 150px;
+    min-height: 150px;
     max-width: 250px;
     display: flex;
     flex-direction: column;
@@ -155,29 +157,41 @@ html::selection{
     box-shadow: 0 0px 20px rgb(38, 38, 38),0 0px 10px rgb(146, 225, 236);
 }
 #offer-sec{
+    min-height: 100vh;
+    max-height:110vh;
     background: url("https://images.unsplash.com/photo-1553025934-296397db4010?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
 }
 #offer-sec .mask{
+    min-height: 100vh;
     padding: 100px 0 ;
 }
 #offer-sec .off-text{
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content:center;
+    gap: 40px;
 }
-.offer {
+.offer{
     color: rgb(230, 0, 0);
     gap: 30px;
     background-color: rgb(255, 174, 0);
     padding: 20px;
     border-radius: 10px;
+    transition: all .2s ease;
+}
+.offer:hover{
+    /* color:red; */
+    scale: 1.08;
+    transform: translateY(-15px);
 }
 .offer ul li{
     color:#000;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 50px;
+    /* line-height: 50px; */
     border-bottom: 2px #000 dashed;
+}
+.offer ul li:hover{  
+    color:#fff;
 }
 .offer p{
     font-size: 25px;
@@ -189,6 +203,8 @@ html::selection{
 /* Menu Section */
 
 #menu-sec{
+    min-height: 100vh;
+    max-height:110vh;
     background: url("https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/cooked-mussels-qdw118_PN3xAFS89lCXBD.webp")center/cover;
 }
 #menu-sec .mask{
@@ -204,15 +220,24 @@ html::selection{
     color: black;
     gap:30px;
     background-color: rgb(255,174,0);
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 10px;
+    transition: all .2s ease;
 }
 .dish ul li{
-    font-size:18px;
+    font-size:16px;
     font-weight: 600;
-    line-height: 30px;
+    /* line-height: 30px; */
     border-bottom: 1px #000 dotted;
     color:black;
+}
+.dish ul li:hover{
+    color:rgb(255, 255, 255);
+}
+.dish:hover{
+    /* color:red; */
+    scale: 1.08;
+    transform: translateY(-15px);
 }
 .dish p{
     font-size: 30px;
@@ -224,7 +249,7 @@ html::selection{
 
 
 #contact{
-    /* height: 80vh;    */
+    height: 800px;   
     background:url("https://images.unsplash.com/photo-1625604087024-7fb428fc4626?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
 }
 .mask{
@@ -234,7 +259,7 @@ html::selection{
     padding: 50px;
 }
 #contact h1,ul li{
-    z-index: 100;
+    /* z-index: 100; */
     color:#fff ;
     list-style: none;
 }
@@ -246,7 +271,7 @@ html::selection{
 }
 .contact-details{
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 50px;
+    padding:10px 20px; 
     border-radius: 10px;
     line-height: 35px;
     width: 500px;
@@ -262,4 +287,66 @@ footer{
 footer p{
     font-size: 12px;
     line-height: 40px;
+}
+
+@media (max-width: 768px) {
+    /* *{
+         border: 1px red solid;
+    } */
+    .header .menu{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-text{
+        padding: 0px;
+    }
+    .main-text h1{
+        font-size:35px;
+    }
+    .main-p-text{
+        font-size:12px;
+        padding: 10px;
+        text-align: center;
+    }
+    .list-menu,.welcome-sec{
+        width: 100%;
+    }
+    .list-text{
+        font-size:20px;
+    }
+    .reviews{
+        gap: 50px;
+        overflow-x: auto;
+        margin-bottom: 50px;
+        padding: 50px;
+    }
+    .reviews .review-box{
+        min-width: 250px;
+    }
+    .list-text{
+        font-size:35px;
+    }
+    #offer-sec .mask h1{
+        font-size: 35px;
+    }
+    #offer-sec .off-text{
+        flex-direction: column;
+        padding: 20px;
+    }
+    #menu-sec .mask h1{
+        font-size: 35px;
+    }
+    .menus{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contact-details{
+        width: 100%;
+    }
+    .contact-details li{
+        font-size: 12px;
+    }
 }
