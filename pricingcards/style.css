@@ -38,7 +38,6 @@ body{
 }
 .free .text{
     background:linear-gradient(to right,rgb(215, 235, 248),rgb(88, 184, 244));
-    /* background-color: #27264B; */
 }
 .lite .text{
     background:linear-gradient(to right,rgb(226, 245, 142),rgb(212, 245, 62));
@@ -46,7 +45,7 @@ body{
 .pro .text{
     background:linear-gradient(to right,rgb(188, 244, 170),rgb(102, 244, 54));
 }
-.max .text{
+.max .text{ 
     background:linear-gradient(to right,rgb(248, 201, 165),rgb(246, 141, 62));
 }
 .free:hover{
@@ -59,7 +58,7 @@ body{
     box-shadow: 0 25px 20px -5px rgb(149, 244, 117);
 }
 .max:hover{
-    box-shadow: 0 25px 20px  rgb(245, 173, 117);
+    box-shadow: 0 25px 20px -5px rgb(245, 173, 117);
 }
 sub,sup{
     font-weight: 700;
@@ -93,6 +92,18 @@ sub,sup{
     background-color: #27264B;
 }
 .button p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+}
+ul{
+    margin-top: 30px ;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+ul li p{
+    font-size:10px;
 }
