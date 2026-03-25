@@ -11,14 +11,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:20px;
 }
 .main{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    height: 80%;
-    width: 90%;
     border-radius: 25px ;
     background-color:#F8FAFE;
     padding: 50px;
