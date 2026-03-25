@@ -23,8 +23,6 @@ body{
     padding: 50px;
 }
 .card{
-    height:100% ;
-    width: 400px;
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 15px -10px gray;
