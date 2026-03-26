@@ -29,7 +29,8 @@ html::selection{
 .header .menu{
     display: flex;
     list-style: none;
-    gap: 15px;
+    /* gap: 15px; */
+    justify-content: space-evenly;
     padding: 10px;
 }
 .menu li a{
@@ -134,7 +135,7 @@ html::selection{
 }
 .reviews{
     display: flex;
-    gap:20px;
+    /* gap:20px; */
     justify-content: space-evenly;
 }
 .stars{
@@ -183,7 +184,7 @@ html::selection{
 }
 .offer{
     color: rgb(230, 0, 0);
-    gap: 30px;
+    justify-content: space-evenly;
     background-color: rgb(255, 174, 0);
     padding: 20px;
     border-radius: 10px;
@@ -223,8 +224,8 @@ html::selection{
 }
 .menus{
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: space-evenly;
+    /* gap: 30px; */
 }
 
 .dish{
