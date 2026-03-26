@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     font-family: 'Poppins', sans-serif;
-    /*border:1px red solid;*/
+    /* border:1px red solid;    */
 }
 body{
     background-color: #27264B;
@@ -103,6 +103,7 @@ ul li{
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-bottom: 20px;
 }
 ul li p{
     font-size:10px;
