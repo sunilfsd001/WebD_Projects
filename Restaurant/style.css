@@ -29,7 +29,7 @@ html::selection{
 .header .menu{
     display: flex;
     list-style: none;
-    /* gap: 15px; */
+    gap: 15px;
     justify-content: space-evenly;
     padding: 10px;
 }
