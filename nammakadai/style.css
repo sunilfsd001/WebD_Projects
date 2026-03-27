@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    /* border:1px red solid;    */
+}
+html::selection{
+    color: white;
+    background-color: black;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 50px;
+    flex-direction: column;
+    background-color: #defde0;
+    overflow: hidden;
+}
+h1{
+    font-size: 100px;
+    background:linear-gradient(to top right,#003711,#55ff60);
+    color: transparent;
+    background-clip: text;
+}
+.welcome{
+    display: flex;
+    align-items: baseline;
+    animation: up 1.5s ease ;
+}
+.welcome img{
+    height: 150px;
+    animation: side 2s ease;
+    z-index: -10;
+}
+.btn{
+    /* width: 10%; */
+    background-color: rgb(92, 255, 100);
+    padding:10px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .2s ease;
+    animation: down 1.5s ease ;
+}
+.btn a{
+    color: rgb(0, 86, 0);
+    font-weight:700;
+    font-size: 20px;
+    text-decoration: none;
+}
+.btn:hover{
+    scale: 1.1;
+    transform: translateY(-5px);
+}
+@keyframes up {
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes side {
+    0%{
+        transform: translateX(-500px);
+    }
+    60%{
+        transform: translateX(-500px);
+    }
+    80%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes down {
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

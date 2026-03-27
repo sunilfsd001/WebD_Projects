@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    /* border:1px red solid;    */
+}
+html::selection{
+    color: white;
+    background-color: black;
+}
+nav{
+    background-color: #bcffc1;
+    padding: 20px 10px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+    background:linear-gradient(to top right,#003711,#70ff79);
+    color: transparent;
+    background-clip: text;
+}
+header{
+    background-color: #dffde1;
+}
+ul{
+    list-style: none;
+}
+.type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    gap: 50px;
+    /* padding: 10px; */
+}
+.type p{
+    padding:10px;
+}
+.catog{
+    padding: 10px;
+}
+.box{
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #dffde1;
+    transform: translateX(-20px);
+    padding: 10px 30px;
+}
+.org:hover .orgbox{
+    display: block;
+}
+.fru:hover .frubox{
+    display: block;
+}
+.veg:hover .vegbox{
+    display: block;
+}
+.gro:hover .grobox{
+    display: block;
+}
+.box ul li p{
+    cursor: pointer;
+    font-weight: 400;
+    border-bottom:1px solid transparent ;
+}
+.box ul li p:hover{
+    color: #003611;
+    border-bottom: 1px solid rgb(0, 54, 0);
+}
+.bt{
+    height: 100vh;
+    background-color: #ffffff;
+}
+.item-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px 20px;
+}
+.items{
+    border: 1px gray solid;
+    padding: 10px;
+}
