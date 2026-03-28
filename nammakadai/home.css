@@ -12,7 +12,10 @@ html::selection{
 }
 nav{
     background-color: #bcffc1;
-    padding: 20px 10px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav a{
     text-decoration: none;
@@ -22,8 +25,24 @@ nav a{
     color: transparent;
     background-clip: text;
 }
+nav i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+nav i:hover{
+    transform: translateY(-5px);
+    color: green;
+}
 header{
+    padding: 0 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     background-color: #dffde1;
+}
+.add{
+    font-size: 12px;
 }
 ul{
     list-style: none;
@@ -85,6 +104,7 @@ ul{
 .item-box img{
     height: 150px;
     width: 200px;
+    transition: all .2s ease-in;
 }
 .items{
     border: 1px rgb(221, 221, 221) solid;
@@ -96,6 +116,9 @@ ul{
 .items:hover{
     scale: 1.05;
     transform: translateY(-10px);
+}
+.items:hover .item-box img{
+    scale: 1.09;
 }
 .item-name{
     font-size: 18px;
@@ -130,4 +153,16 @@ ul{
     align-items: center;
     text-align: center;
     margin-top: 10px;
+}
+footer{
+    background-color: #bcffc1;
+    height:100px;
+    color: #000000;
+    text-align: center;
+    padding: 40px;
+}
+footer p{
+    font-size: 14px;
+    font-weight:500 ;
+    line-height: 40px;
 }
