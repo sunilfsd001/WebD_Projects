@@ -49,6 +49,7 @@ ul{
     background-color: #dffde1;
     transform: translateX(-20px);
     padding: 10px 30px;
+    border-radius:0 0 10px 10px;
 }
 .org:hover .orgbox{
     display: block;
@@ -79,9 +80,54 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 80px 20px;
+    padding:20px; 
+}
+.item-box img{
+    height: 150px;
+    width: 200px;
 }
 .items{
-    border: 1px gray solid;
+    border: 1px rgb(221, 221, 221) solid;
+    box-shadow:0 10px 10px rgb(243, 243, 243);
     padding: 10px;
+    margin-top: 50px;
+    transition: all .3s ease;
+}
+.items:hover{
+    scale: 1.05;
+    transform: translateY(-10px);
+}
+.item-name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.desc{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+    background-color: #F0F0F0;
+    color: #707070;
+    display: inline;
+    border-radius: 2px;
+}
+.btn{
+    background-color: #70ff79;
+    color: #003611;
+    border-radius: 10px;
+    width: 40%;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover{
+    box-shadow:0 3px 5px rgb(177, 177, 177);
+    transform: translateY(-10px);
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
 }
