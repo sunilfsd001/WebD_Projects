@@ -69,6 +69,7 @@ ul{
     transform: translateX(-20px);
     padding: 10px 30px;
     border-radius:0 0 10px 10px;
+    z-index: 100;
 }
 .org:hover .orgbox{
     display: block;
@@ -144,8 +145,8 @@ ul{
     transition: all .3s ease;
 }
 .btn:hover{
-    box-shadow:0 3px 5px rgb(177, 177, 177);
-    transform: translateY(-10px);
+    box-shadow:0 1px 8px  rgb(171, 171, 171);
+    transform: translateY(-5px);
 }
 .price{
     display: flex;
