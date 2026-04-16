@@ -27,13 +27,13 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    height: calc(100vh - 100px);
+    height: 400px;
     padding: 10px 50px ;
 }
 .icons-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 80px;
     padding:20px;
     height: 100px;

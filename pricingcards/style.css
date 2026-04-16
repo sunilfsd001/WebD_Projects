@@ -23,6 +23,7 @@ body{
     padding: 50px;
 }
 .card{
+    width: 300px;
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 15px -10px gray;
@@ -44,6 +45,9 @@ body{
 }
 .pro .text{
     background:linear-gradient(to right,rgb(188, 244, 170),rgb(102, 244, 54));
+}
+.pro{
+    scale: 1.1;
 }
 .max .text{ 
     background:linear-gradient(to right,rgb(248, 201, 165),rgb(246, 141, 62));
